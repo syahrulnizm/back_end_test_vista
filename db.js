@@ -1,10 +1,9 @@
 const mysql = require('mysql2/promise');
 
-// Create a connection pool (recommended for production)
 const pool = mysql.createPool({
-  host: 'localhost',       // Your MySQL host
-  user: 'root',   // Your MySQL username
-  password: null, // Your MySQL password
+  host: 'localhost',
+  user: 'root',
+  password: null,
   database: 'vista-db',
   waitForConnections: true,
   connectionLimit: 10,
